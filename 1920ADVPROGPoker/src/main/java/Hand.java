@@ -8,7 +8,7 @@
  *
  * @author maxime.rombaut
  */
-public class PokerHand {
+public class Hand {
     
     public String getValue(){
         return null;
