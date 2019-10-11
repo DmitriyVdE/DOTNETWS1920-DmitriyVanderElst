@@ -40,13 +40,32 @@ public class HandTest {
     public void checkHandLength(){
         Hand testHand = makeHand();
         assertEquals(5,testHand.getCards().length);
-        
     }
     
     @Test
     public void checkDoubles(){
         Hand testHand = makeHand();
-        assertFalse(Cards.)
+        //assertFalse(Cards.)
+    }
+    
+    @Test
+    public void checkSameSuit(){
+        boolean result = false;
+        Hand testHand = makeHand();
+        
+        Card[] allCards = testHand.getCards();
+        
+        if(allCards[0].suit == allCards[1].suit){
+            if(allCards[1].suit == allCards[2].suit){
+                if(allCards[2].suit == allCards[3].suit){
+                    if(allCards[3].suit == allCards[4].suit){
+                        result = true;
+                    }
+                }
+            }
+        }
+        
+        assertEquals(true, result);
     }
     
 }
