@@ -24,7 +24,7 @@ public class HandTest {
     public void testGetValue() {
     }
     @Test
-    public void validHand(){
+    public void checkHandLength(){
         Card[] validHand = new Card[]{
                 new Card(Suit.CLUB, Rank.TWO),
                 new Card(Suit.HEART, Rank.ACE),
@@ -35,6 +35,20 @@ public class HandTest {
         Hand testHand = new Hand(validHand);
         assertEquals(5,testHand.getCards().length);
         
+    }
+    
+    @Test
+    public void checkDoubles(){
+        Card[] validHand = new Card[]{
+                new Card(Suit.CLUB, Rank.TWO),
+                new Card(Suit.HEART, Rank.ACE),
+                new Card(Suit.SPADE, Rank.KING),
+                new Card(Suit.CLUB, Rank.TWO),
+                new Card(Suit.DIAMOND, Rank.NINE)
+            };
+        
+        Hand testHand = new Hand(validHand);
+        assertFalse(Cards.)
     }
     
 }
