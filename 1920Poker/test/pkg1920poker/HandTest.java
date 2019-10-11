@@ -23,8 +23,8 @@ public class HandTest {
     @Test
     public void testGetValue() {
     }
-    @Test
-    public void checkHandLength(){
+    
+    public Hand makeHand(){
         Card[] validHand = new Card[]{
                 new Card(Suit.CLUB, Rank.TWO),
                 new Card(Suit.HEART, Rank.ACE),
@@ -33,21 +33,19 @@ public class HandTest {
                 new Card(Suit.DIAMOND, Rank.NINE)
             };
         Hand testHand = new Hand(validHand);
+        return testHand;
+    }
+    
+    @Test
+    public void checkHandLength(){
+        Hand testHand = makeHand();
         assertEquals(5,testHand.getCards().length);
         
     }
     
     @Test
     public void checkDoubles(){
-        Card[] validHand = new Card[]{
-                new Card(Suit.CLUB, Rank.TWO),
-                new Card(Suit.HEART, Rank.ACE),
-                new Card(Suit.SPADE, Rank.KING),
-                new Card(Suit.CLUB, Rank.TWO),
-                new Card(Suit.DIAMOND, Rank.NINE)
-            };
-        
-        Hand testHand = new Hand(validHand);
+        Hand testHand = makeHand();
         assertFalse(Cards.)
     }
     
