@@ -31,9 +31,7 @@ public class HandTest {
                 new Card(Suit.SPADE, Rank.KING),
                 new Card(Suit.CLUB, Rank.THREE),
                 new Card(Suit.DIAMOND, Rank.NINE)
-                
-                
-                        };
+            };
         Hand testHand = new Hand(validHand);
         assertEquals(5,testHand.getCards().length);
         
