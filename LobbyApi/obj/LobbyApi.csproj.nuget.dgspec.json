@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmitriy\\Source\\Repos\\dotnetws1920-dmitriyvanderelst\\LobbyApi\\LobbyApi\\LobbyApi.csproj": {}
+    "C:\\repositories\\DOTNETWS1920-DmitriyVanderElst\\LobbyApi\\LobbyApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmitriy\\Source\\Repos\\dotnetws1920-dmitriyvanderelst\\LobbyApi\\LobbyApi\\LobbyApi.csproj": {
+    "C:\\repositories\\DOTNETWS1920-DmitriyVanderElst\\LobbyApi\\LobbyApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitriy\\Source\\Repos\\dotnetws1920-dmitriyvanderelst\\LobbyApi\\LobbyApi\\LobbyApi.csproj",
+        "projectUniqueName": "C:\\repositories\\DOTNETWS1920-DmitriyVanderElst\\LobbyApi\\LobbyApi.csproj",
         "projectName": "LobbyApi",
-        "projectPath": "C:\\Users\\Dmitriy\\Source\\Repos\\dotnetws1920-dmitriyvanderelst\\LobbyApi\\LobbyApi\\LobbyApi.csproj",
+        "projectPath": "C:\\repositories\\DOTNETWS1920-DmitriyVanderElst\\LobbyApi\\LobbyApi.csproj",
         "packagesPath": "C:\\Users\\Dmitriy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitriy\\Source\\Repos\\dotnetws1920-dmitriyvanderelst\\LobbyApi\\LobbyApi\\obj\\",
+        "outputPath": "C:\\repositories\\DOTNETWS1920-DmitriyVanderElst\\LobbyApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Dmitriy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -96,6 +95,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -104,7 +121,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
