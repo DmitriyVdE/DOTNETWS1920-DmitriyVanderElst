@@ -29,7 +29,7 @@ namespace LobbyUI.Controllers
             IEnumerable<UserVM> users;
 
             var request = new HttpRequestMessage(HttpMethod.Get, _appSettings.BaseURL + "users");
-            Console.WriteLine(request.ToString());
+
             request.Headers.Add("Accept", "application/json");
 
             var client = _httpClientFactory.CreateClient();
